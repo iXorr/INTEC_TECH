@@ -26,6 +26,7 @@
 }
 
 .icon {
+    padding: 1rem;
     width: 5rem;
     height: 5rem;
     transition: .1s ease;
@@ -73,7 +74,8 @@
     background: #194DD2;
 }
 
-.bg-blue:hover {
+.bg-blue:hover,
+.bg-blue:active {
     fill: #fff;
     color: #fff;
     background: #000;
@@ -83,7 +85,8 @@
     background: transparent;
 }
 
-.bg-trans:hover {
+.bg-trans:hover,
+.bg-trans:active {
     color: #fff;
     background: #194DD2;
     border: 1px solid transparent;

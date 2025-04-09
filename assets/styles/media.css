@@ -55,13 +55,41 @@ Mobile: 360 x 760 */
         background: green;
     }
     
-        .nav-bar__ham {
+        .nav-bar__ham,
+        .ham-exit-btn {
             display: block;
         }
 
+            .ham-btn:active svg {
+                scale: 1.25;
+            }
+
         .nav-bar__links {
-            display: none;
-            width: fit-content;
+            display: block;
+            position: absolute;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            
+            opacity: 0;
+            z-index: -1;
+
+            padding: 4rem;
+            font-size: 1.5rem;
+        }
+
+        .nav-bar__links > *:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+           
+            .ham-exit-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+        .nav-bar__links--active {
+            z-index: 1;
+            opacity: 1;
         }
 
         .nav-bar__login {
