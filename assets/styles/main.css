@@ -1,0 +1,63 @@
+@import url("./normalization.css");
+@import url("./utils.css");
+@import url("./fonts.css");
+
+.header {
+    height: 904px;
+}
+
+    .header__shortcut {
+        width: 468px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+        .arrow-icon path {
+            stroke: #fff;
+        }
+
+    .header__content {
+        font-size: 1rem;
+
+        background-image: url("../img/dark-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+        .links {
+            width: 75%;
+            padding: 2rem 4rem;
+            justify-content: space-around;
+        }
+        
+            .links a {
+                color: #fff;
+            }
+
+        .login {
+            width: 25%;
+            font-size: inherit;
+        }
+
+        .preview {
+            justify-content: center;
+            padding-left: 4rem;
+        }
+
+            .preview > *:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+
+            .preview__title {
+                font-size: 3rem;
+            }
+
+            .preview__text {
+                font-size: 1.25rem;
+            }
+
+            .preview__btn {
+                width: fit-content;
+                letter-spacing: inherit;
+                font-size: inherit;
+            }

@@ -1,0 +1,76 @@
+/* Утилитарные (структурные) классы */
+
+.pointer {
+    cursor: pointer;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.high-line {
+    line-height: 150%;
+}
+
+.circled-btn {
+    padding: 1rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-spaced {
+    letter-spacing: .05rem;
+}
+
+/* Утилитарные (внешний вид) классы с псевдоклассами */
+
+.bg-dark {
+    color: #fff;
+    background: #000;
+}
+
+.bg-blue {
+    color: #fff;
+    background: #194DD2;
+}
+
+.bg-blue:hover {
+    color: #fff;
+    background: #000;
+}
+
+.bg-trans {
+    background: transparent;
+}
+
+.bg-trans:hover {
+    color: #fff;
+    background: #194DD2;
+    border: 1px solid transparent;
+}

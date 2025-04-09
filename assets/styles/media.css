@@ -1,0 +1,39 @@
+@media (min-width: 1920px), (max-width: 1920px) {
+    /* * {
+        background: lightcoral;
+    } */
+    
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1440px) {
+    /* * {
+        background: lightyellow;
+    } */
+
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    /* * {
+        background: lightgreen;
+    } */
+
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* * {
+        background: lightskyblue;
+    } */
+
+    html {
+        font-size: 12px;
+    }
+}
