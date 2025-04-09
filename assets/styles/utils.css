@@ -28,7 +28,18 @@
 .icon {
     width: 5rem;
     height: 5rem;
+    transition: .1s ease;
 }
+
+    .icon--white {
+        fill: #fff;
+        background: transparent;
+    }
+
+    .icon--white:focus {
+        fill: #fff;
+        background: #194DD2;
+    }
 
 .high-line {
     line-height: 150%;
@@ -51,16 +62,19 @@
 /* Утилитарные (внешний вид) классы с псевдоклассами */
 
 .bg-dark {
+    fill: #fff;
     color: #fff;
     background: #000;
 }
 
 .bg-blue {
+    fill: #fff;
     color: #fff;
     background: #194DD2;
 }
 
 .bg-blue:hover {
+    fill: #fff;
     color: #fff;
     background: #000;
 }

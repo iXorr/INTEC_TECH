@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Website for INTEC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/media.css">
@@ -9,9 +10,11 @@
     <title>INTEC | Тех. задание</title>
 </head>
 <body>
+    <div class="adaptive"></div>
+
     <header class="header flex bg-dark">
         <div class="header__shortcut bg-blue pointer flex flex-column flex-centered" role="button">
-            <a href="#"><h3 class="text-bold text-spaced">Начать зарабатывать</h3></a>
+            <h3 class="text-bold text-spaced">Начать зарабатывать</h3>
 
             <svg class="icon arrow-icon"
             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +29,16 @@
 
         <div class="header__content flex flex-column w-full">
             <nav class="nav-bar flex bg-dark">
-                <ul class="links flex text-spaced">
+                <div class="nav-bar__ham">
+                    <button class="ham-btn">
+                        <svg class="icon icon--white ham-icon" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m0 0h27.65v5.219h-27.65z"/>
+                            <path d="m0 9.39h27.65v5.219h-27.65z"/><path d="m0 18.781h27.65v5.219h-27.65z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="nav-bar__links links flex flex-centered text-spaced">
                     <li class="links__item"><a href="#">О компании</a></li>
                     <li class="links__item"><a href="#">Инвестору</a></li>
                     <li class="links__item"><a href="#">Новости</a></li>
@@ -35,17 +47,36 @@
                     <li class="links__item"><a href="#">Контакты</a></li>
                 </ul>
 
-                <a href="#" class="login bg-blue flex flex-centered">Вход / Регистрация</a>
+                <button class="login bg-blue flex flex-centered pointer">Вход / Регистрация</button>
             </nav>
 
             <div class="preview flex flex-column h-full text-spaced">
-                <p class="preview__title text-bold high-line" role="heading" aria-level="2">Сегодня рынок <br> IT-технологий измеряется <br> уже триллионами долларов</p>
+                <div class="preview__content">
+                    <p class="preview__title text-bold high-line" role="heading" aria-level="2">Сегодня рынок IT-технологий измеряется уже триллионами долларов</p>
+                    <p class="preview__text high-line">Мы знаем как заработать свою долю прибыли. Регистрируйтесь на нашей платформе и начинайте зарабатывать с нами</p>
 
+                    <button class="preview__btn circled-btn bg-trans pointer">Калькулятор прибыли</button>
+                </div>
 
-                <p class="preview__text high-line">Мы знаем как заработать свою долю прибыли. <br> Регистрируйтесь на нашей платформе и начинайте <br> зарабатывать с нами</p>
-                <a href="#" class="preview__btn circled-btn bg-trans pointer">Калькулятор прибыли</a>
+                <!-- <div class="slider w-full h-full">
+                    <div class="slider__indicator flex flex-column flex-centered">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </header>
+
+    <!-- <main>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+
+        для hover или active добавлять box-shadow. и всё
+    </main> -->
 </body>
 </html>
