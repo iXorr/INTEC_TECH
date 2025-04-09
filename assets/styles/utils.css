@@ -1,5 +1,9 @@
 /* Утилитарные (структурные) классы */
 
+.smooth {
+    transition: .25s ease;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -26,9 +30,8 @@
 }
 
 .icon {
-    padding: 1rem;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     transition: .1s ease;
 }
 

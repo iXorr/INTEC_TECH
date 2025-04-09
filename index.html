@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="description" content="Website for INTEC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="./assets/img/dark-bg-1.webp" as="image">
+    <link rel="preload" href="./assets/img/dark-bg-2.webp" as="image">
+    <link rel="preload" href="./assets/img/dark-bg-3.webp" as="image">
+
     <link rel="stylesheet" href="./assets/styles/normalization.css">
     <link rel="stylesheet" href="./assets/styles/utils.css">
     <link rel="stylesheet" href="./assets/styles/fonts.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/media.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
     <title>INTEC | Тех. задание</title>
 </head>
 <body>
     <div class="adaptive"></div>
 
     <header class="header flex bg-dark">
-        <div class="header__shortcut bg-blue pointer flex flex-column flex-centered" role="button">
+        <div class="header__shortcut bg-blue pointer flex flex-column flex-centered smooth" role="button">
             <h3 class="text-bold text-spaced">Начать зарабатывать</h3>
 
             <svg class="icon arrow-icon"
@@ -30,7 +36,7 @@
             </svg>
         </div>
 
-        <div class="header__content flex flex-column w-full">
+        <div class="header__content flex flex-column w-full smooth">
             <nav class="nav-bar flex bg-dark">
                 <div class="nav-bar__ham">
                     <button class="ham-btn" type="submit" aria-label="search" onpointerdown="showHeaderLinks()">
@@ -42,12 +48,12 @@
                 </div>
 
                 <ul class="nav-bar__links links flex flex-centered text-spaced">
-                    <li class="links__item"><a href="#">О компании</a></li>
-                    <li class="links__item"><a href="#">Инвестору</a></li>
-                    <li class="links__item"><a href="#">Новости</a></li>
-                    <li class="links__item"><a href="#">Отзывы</a></li>
-                    <li class="links__item"><a href="#">F.A.Q</a></li>
-                    <li class="links__item"><a href="#">Контакты</a></li>
+                    <li class="links__item smooth"><a href="#">О компании</a></li>
+                    <li class="links__item smooth"><a href="#">Инвестору</a></li>
+                    <li class="links__item smooth"><a href="#">Новости</a></li>
+                    <li class="links__item smooth"><a href="#">Отзывы</a></li>
+                    <li class="links__item smooth"><a href="#">F.A.Q</a></li>
+                    <li class="links__item smooth"><a href="#">Контакты</a></li>
 
                     <li class="ham-exit-btn" onpointerdown="hideHeaderLinks()">
                         <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +62,7 @@
                     </li>
                 </ul>
 
-                <button class="login bg-blue flex flex-centered pointer">Вход / Регистрация</button>
+                <button class="login bg-blue flex flex-centered pointer smooth">Вход / Регистрация</button>
             </nav>
 
             <div class="preview flex flex-column h-full text-spaced">
@@ -64,14 +70,14 @@
                     <p class="preview__title text-bold high-line" role="heading" aria-level="2">Сегодня рынок IT-технологий измеряется уже триллионами долларов</p>
                     <p class="preview__text high-line">Мы знаем как заработать свою долю прибыли. Регистрируйтесь на нашей платформе и начинайте зарабатывать с нами</p>
 
-                    <button class="preview__btn circled-btn bg-trans pointer">Калькулятор прибыли</button>
+                    <button class="preview__btn circled-btn bg-trans pointer smooth">Калькулятор прибыли</button>
                 </div>
 
                 <div class="slider w-full h-full">
                     <div class="slider__indicator flex flex-column flex-centered">
-                        <div class="circle circle--chosen"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                        <div class="circle circle--chosen smooth"></div>
+                        <div class="circle smooth"></div>
+                        <div class="circle smooth"></div>
                     </div>
                 </div>
             </div>
@@ -88,36 +94,6 @@
         для hover или active добавлять box-shadow. и всё
     </main> -->
 
-    <script>
-        const headerLinks = document.querySelector(".nav-bar__links");
-        const showHeaderLinks = () => headerLinks.classList.add("nav-bar__links--active");
-        const hideHeaderLinks = () => headerLinks.classList.remove("nav-bar__links--active");
-
-        
-        
-        const headerContent = document.querySelector(".header__content");
-        const sliderCircles = document.querySelector(".slider__indicator").children;        
-        const bgImages = ["./assets/img/dark-bg-1.webp", "./assets/img/dark-bg-2.webp", "./assets/img/dark-bg-3.webp"];
-
-        (function autoSlide() {
-            const slidingFrequency = 3000;
-            let i = 0;
-
-            setInterval(() => {
-                headerContent.style.backgroundImage = `url(${bgImages[i]})`;
-
-                for (let circle of sliderCircles) {
-                    circle.classList.remove("circle--chosen");
-                }
-
-                sliderCircles[i].classList.add("circle--chosen");
-
-                if (i == 2)
-                    i = 0;
-                else
-                    i++;
-            }, slidingFrequency);
-        })();
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>

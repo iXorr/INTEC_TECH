@@ -60,21 +60,20 @@ Mobile: 360 x 760 */
             display: block;
         }
 
-            .ham-btn:active svg {
-                scale: 1.25;
-            }
+        .nav-bar__ham {
+            margin: 1rem;
+        }
 
         .nav-bar__links {
             display: block;
             position: absolute;
             height: 100%;
             background: rgba(0, 0, 0, 0.9);
-            
-            opacity: 0;
-            z-index: -1;
-
             padding: 4rem;
             font-size: 1.5rem;
+
+            opacity: 0;
+            z-index: -1;
         }
 
         .nav-bar__links > *:not(:last-child) {
@@ -83,8 +82,8 @@ Mobile: 360 x 760 */
            
             .ham-exit-btn {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 4rem;
+                right: 4rem;
             }
 
         .nav-bar__links--active {
