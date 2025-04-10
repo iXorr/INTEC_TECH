@@ -1,5 +1,39 @@
 /* Утилитарные (структурные) классы */
 
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.circle {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.circle--chosen {
+    background: #fff;
+}
+
+.large-circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.h-self {
+    height: fit-content;
+}
+
+.w-self {
+    width: fit-content;
+}
+
+.horizontal-line {
+    width: 3rem;
+    height: 3px;
+}
+
 .pretty-text {
     text-wrap: balance;
 }
@@ -84,18 +118,29 @@
     background: #000;
 }
 
+.bg-light {
+    background: #fff;   
+    color: #194DD2;
+}
+
+    .bg-light:hover,
+    .bg-light:active {
+        background: #194DD2;   
+        color: #fff;
+    }
+
 .bg-blue {
     fill: #fff;
     color: #fff;
     background: #194DD2;
 }
 
-.bg-blue:hover,
-.bg-blue:active {
-    fill: #fff;
-    color: #fff;
-    background: #000;
-}
+    .bg-blue:hover,
+    .bg-blue:active {
+        fill: #fff;
+        color: #fff;
+        background: #000;
+    }
 
 .bg-trans {
     background: transparent;

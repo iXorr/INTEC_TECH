@@ -81,14 +81,3 @@
                 .slider__indicator > *:not(:last-child) {
                     margin-bottom: 1rem;
                 }
-
-                .circle {
-                    width: .5rem;
-                    height: .5rem;
-                    border-radius: 100%;
-                    background: rgba(255, 255, 255, 0.5);
-                }
-                
-                .circle--chosen {
-                    background: #fff;
-                }

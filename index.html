@@ -11,6 +11,7 @@
     <link rel="preload" href="./assets/img/dark-bg-2.webp" as="image">
     <link rel="preload" href="./assets/img/dark-bg-3.webp" as="image">
     <link rel="preload" href="./assets/img/writter-bg.webp" as="image">
+    <link rel="preload" href="./assets/img/code-bg.webp" as="image">
 
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -139,12 +140,52 @@
                     </li>
                 </ul>
             </section>
-
-            <!-- hover / active - это box-shadow -->
         </article>
 
-        
-        <article class="invest">INVEST</article>
+        <article class="invest bg-dark flex">
+            <section class="invest__preview bg-image h-full no-shrink"></section>
+
+            <section class="invest__guide w-full h-full flex">
+                <div class="guide-offer h-full flex flex-column">
+                    <h2 class="pretty-text">Инвестировать с нами надежно и выгодно</h2>
+                    <div class="horizontal-line bg-light"></div>
+                    <button class="circled-btn bg-blue smooth w-self">Начать зарабатывать</button>
+                </div>
+
+                <ul class="guide-steps flex flex-column flex-centered">
+                    <li class="guide-line"></li>
+
+                    <li class="guide-steps__item flex">
+                        <span class="large-circle bg-light flex flex-centered no-shrink smooth" style="font-size: 3rem;">1</span>
+                        
+                        <div class="guide-steps__item-info">
+                            <p style="font-weight: bold;">Регистрация на сайте</p>
+                            <p>Пройдите процедуру регистрации на сайте для открытия счета. Нажмите кнопку «Регистрация» и заполните все необходимые поля</p>
+                        </div>
+                    </li>
+
+                    <li class="guide-steps__item flex">
+                        <span class="large-circle bg-light flex flex-centered no-shrink smooth" style="font-size: 3rem;">2</span>
+                        
+                        <div class="guide-steps__item-info">
+                            <p style="font-weight: bold;">Открывайте депозит</p>
+                            <p>Сделайте инвестицию на удобный срок на сумму от 100 рублей и ваши деньги начнут работать на вас</p>
+                        </div>
+                    </li>
+
+                    <li class="guide-steps__item flex">
+                        <span class="large-circle bg-light flex flex-centered no-shrink smooth" style="font-size: 3rem;">3</span>
+                        
+                        <div class="guide-steps__item-info">
+                            <p style="font-weight: bold;">Распоряжайтесь прибылью</p>
+                            <p>По факту окончания периода инвестиции вклад с прибылью будут доступы для вывода или создания нового депозита</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+
         <article class="faq">FAQ</article>
         <article class="stats">STATS</article>
     </main>
