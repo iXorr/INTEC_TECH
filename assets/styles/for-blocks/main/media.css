@@ -1,0 +1,25 @@
+/* @media (min-width: 1920px), (max-width: 1920px) {
+    .header {
+        height: clamp(75dvh, 904px, 100dvh);
+    }
+
+        .header__shortcut {
+            width: clamp(15dvw, 468px, 25dvw);
+        }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 720px) {
+
+}
+
+@media (max-width: 480px) {
+
+} */

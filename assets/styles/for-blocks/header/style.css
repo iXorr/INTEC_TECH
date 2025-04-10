@@ -1,0 +1,110 @@
+.header__shortcut {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+    .arrow-icon path {
+        stroke: #fff;
+    }
+
+.header__content {
+    background-image: url("../../../img/dark-bg-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    font-size: 1rem;
+}
+
+    .nav-bar {
+        height: 5rem;
+        justify-content: space-between;
+    }
+
+        .nav-bar__ham,
+        .ham-exit-btn {
+            display: none;
+        }
+
+        .nav-bar__links {
+            width: 100%;
+        }
+
+        .links {
+            padding: 0 4rem;
+            justify-content: space-around;
+        }
+
+            .links > *:hover,
+            .links > *:focus {
+                font-weight: bold;
+                letter-spacing: .1rem;
+            }
+
+        .login {
+            white-space: nowrap;
+            font-size: inherit;
+            padding: 0 2rem;
+        }
+
+    .preview {
+        backdrop-filter: brightness(50%);
+        justify-content: center;
+        padding-left: 4rem;
+
+        overflow: hidden;
+    }
+
+        .preview__content {
+            z-index: 1;
+            pointer-events: none;
+            text-wrap: balance;
+            max-width: 75%;
+        }
+
+        .preview__content > *:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+            .preview__title {
+                font-size: 3rem;
+            }
+
+            .preview__text {
+                font-size: 1.25rem;
+            }
+
+            .preview__btn {
+                pointer-events: all;
+                width: fit-content;
+                letter-spacing: inherit;
+                font-size: inherit;
+            }
+
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+            .slider__indicator {
+                height: inherit;
+                align-items: end;
+                padding-right: 10%;
+            }
+
+                .slider__indicator > *:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+
+                .circle {
+                    width: .5rem;
+                    height: .5rem;
+                    border-radius: 100%;
+                    background: rgba(255, 255, 255, 0.5);
+                }
+                
+                .circle--chosen {
+                    background: #fff;
+                }
