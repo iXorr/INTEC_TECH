@@ -1,5 +1,14 @@
 /* Утилитарные (структурные) классы */
 
+.box-shadow {
+    box-shadow: 0px 0px 40px 0px rgba(34, 60, 80, 0.2);
+}
+
+.box-shadow:hover,
+.box-shadow:active {
+    box-shadow: 0px 0px 40px 0px rgba(34, 60, 80, 0.35);
+}
+
 .no-shrink {
     flex-shrink: 0;
 }
@@ -128,6 +137,11 @@
         background: #194DD2;   
         color: #fff;
     }
+
+.bg-blue-static {
+    color: #fff;
+    background: #194DD2;
+}
 
 .bg-blue {
     fill: #fff;

@@ -1,4 +1,4 @@
-// For header
+// For HAM-menu
 
 const headerLinks = document.querySelector(".nav-bar__links");
 const showHeaderLinks = () => {
@@ -11,9 +11,15 @@ const hideHeaderLinks = () => {
     document.body.style.overflow = "auto";
 }
 
+// For slider
+
 const headerContent = document.querySelector(".header__content");
-const sliderCircles = document.querySelector(".slider__indicator").children;        
-const bgImages = ["./assets/img/dark-bg-1.webp", "./assets/img/dark-bg-2.webp", "./assets/img/dark-bg-3.webp"];
+const sliderCircles = document.querySelector(".slider__indicator").children;    
+
+const bgImages = [
+    "./assets/img/dark-bg-1.webp", 
+    "./assets/img/dark-bg-2.webp", 
+    "./assets/img/dark-bg-3.webp"];
 
 (function autoSlide() {
     const slidingFrequency = 3000;
@@ -33,4 +39,15 @@ const bgImages = ["./assets/img/dark-bg-1.webp", "./assets/img/dark-bg-2.webp", 
         else
             i++;
     }, slidingFrequency);
+})();
+
+// For accordion
+
+const accordionItems = document.querySelectorAll("input[name='tabs']");
+
+(function unfocusAccordion() {
+    document.addEventListener("pointerdown", event => {
+        for (let item of accordionItems)
+            event.target == item ? item.checked = true : item.checked = false;
+    });
 })();

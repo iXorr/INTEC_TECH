@@ -15,9 +15,14 @@
             width: 435px;
         }
 
-    .faq {
-        height: clamp(50dvh, 750px, 75dvh);
+    .faq-preview {
+        width: 37.5rem;
+        height: 20rem;
     }
+
+        .acor {
+            width: 35rem;
+        }
 
     .stats {
         height: clamp(50dvh, 725px, 50dvh);
@@ -82,9 +87,16 @@
             display: none;
         }
 
-    .faq {
-        height: clamp(50dvh, 750px, 75dvh);
+    .faq-preview {
+        width: 35rem;
     }
+
+    .acor {
+        width: 25rem;
+    }
+
+
+
 
     .stats {
         height: clamp(50dvh, 725px, 50dvh);
@@ -98,6 +110,14 @@
 @media (max-width: 820px) {
     .guide-offer {
         max-width: 39rem;
+    }
+
+    .faq-preview {
+        display: none;
+    }
+
+    .acor {
+        width: 35rem;
     }
 }
 
@@ -114,11 +134,23 @@
                 text-align: justify;
                 hyphens: auto;
             }
+
+    .faq__title {
+        align-items: start;
+    }
 }
 
 @media (max-width: 480px) { 
     .ad__preview {
         width: 27.5rem;
         height: 22.5rem;
+    }
+
+    .faq {
+        align-items: start;
+    }
+
+    .acor {
+        width: 90%;
     }
 }
