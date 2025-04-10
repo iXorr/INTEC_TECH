@@ -49,11 +49,6 @@
         .ad__more > *:last-child {
             margin: 0;
         }
-
-
-    /* .earns-list {
-        flex-wrap: wrap;
-    } */
     
         .earns-list__item {
             width: 30rem;
