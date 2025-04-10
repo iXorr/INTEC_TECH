@@ -1,6 +1,8 @@
 *,
 *::before,
 *::after {
+    user-select: none;
+
     -webkit-tap-highlight-color: transparent;
 
     margin: 0;
@@ -15,4 +17,29 @@
     font-family: Montserrat;
 
     color: inherit;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: .1rem;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4, p {
+    font-size: 1.25rem;
+}
+
+a, button {
+    font-size: 1rem;
 }

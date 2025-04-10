@@ -1,7 +1,7 @@
+@import url("./normalization.css");
 @import url("./fonts.css");
 @import url("./media.css");
 @import url("./utils.css");
-@import url("./normalization.css");
 
 @import url("./for-blocks/header/style.css");
 @import url("./for-blocks/header/media.css");
@@ -9,7 +9,6 @@
 @import url("./for-blocks/main/style.css");
 @import url("./for-blocks/main/media.css");
 
-/* debug */
 .adaptive {
     display: none;
     position: absolute;

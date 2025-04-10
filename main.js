@@ -1,8 +1,15 @@
 // For header
 
 const headerLinks = document.querySelector(".nav-bar__links");
-const showHeaderLinks = () => headerLinks.classList.add("nav-bar__links--active");
-const hideHeaderLinks = () => headerLinks.classList.remove("nav-bar__links--active");
+const showHeaderLinks = () => {
+    headerLinks.classList.add("nav-bar__links--active");
+    document.body.style.overflow = "hidden";
+}
+
+const hideHeaderLinks = () => {
+    headerLinks.classList.remove("nav-bar__links--active");
+    document.body.style.overflow = "auto";
+}
 
 const headerContent = document.querySelector(".header__content");
 const sliderCircles = document.querySelector(".slider__indicator").children;        

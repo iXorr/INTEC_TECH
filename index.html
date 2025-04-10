@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="description" content="Website for INTEC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 
     <link rel="preload" href="./assets/img/dark-bg-1.webp" as="image">
     <link rel="preload" href="./assets/img/dark-bg-2.webp" as="image">
     <link rel="preload" href="./assets/img/dark-bg-3.webp" as="image">
+    <link rel="preload" href="./assets/img/writter-bg.webp" as="image">
 
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -19,7 +22,7 @@
 
     <header class="header flex bg-dark">
         <div class="header__shortcut bg-blue pointer flex flex-column flex-centered smooth" role="button">
-            <h3 class="text-bold text-spaced">Начать зарабатывать</h3>
+            <h2 style="font-size: 1.75rem;">Начать зарабатывать</h2>
 
             <svg class="icon arrow-icon"
             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +35,7 @@
             </svg>
         </div>
 
-        <div class="header__content flex flex-column w-full smooth">
+        <div class="header__content flex flex-column w-full smooth bg-image">
             <nav class="nav-bar flex bg-dark">
                 <div class="nav-bar__ham">
                     <button class="ham-btn" type="submit" aria-label="search" onpointerdown="showHeaderLinks()">
@@ -63,10 +66,10 @@
 
             <div class="preview flex flex-column h-full text-spaced">
                 <div class="preview__content">
-                    <p class="preview__title text-bold high-line" role="heading" aria-level="2">Сегодня рынок IT-технологий измеряется уже триллионами долларов</p>
+                    <h1 class="preview__title high-line">Сегодня рынок IT-технологий измеряется уже триллионами долларов</h1>
                     <p class="preview__text high-line">Мы знаем как заработать свою долю прибыли. Регистрируйтесь на нашей платформе и начинайте зарабатывать с нами</p>
 
-                    <button class="preview__btn circled-btn bg-trans pointer smooth">Калькулятор прибыли</button>
+                    <button class="preview__btn circled-btn white-bordered bg-trans pointer smooth">Калькулятор прибыли</button>
                 </div>
 
                 <div class="slider w-full h-full">
@@ -80,18 +83,73 @@
         </div>
     </header>
 
-    <!-- <main class="main w-full">
+    <main class="main w-full">
         <article class="info">
-            dasd
+            <section class="ad flex">
+                <div class="ad__preview">
+                    <div class="ad__preview-header rounded bg-blue smooth flex">
+                        <h2>Как мы работаем</h2>
+                    </div>
+
+                    <div class="ad__preview-void rounded"></div>
+                    <div class="ad__preview-void--double rounded"></div>
+                </div>
+
+                <div class="ad__more">
+                    <h2>Как мы работаем и на чем зарабатываем</h2>
+
+                    <p>Команда, у которой за плечами не менее 12 лет работы на разных позициях в сегменте инвестиционного бизнеса – от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка.</p>
+
+                    <p>Формируя динамичный инвестиционный портфель, мы ежедневно применяем накопленный опыт в разных направлениях, и делаем упор на стартапы в сферах:</p>
+
+                    <button class="bg-blue circled-btn pointer smooth">Регистрация</button>
+                </div>
+            </section>
+
+            <section class="earns">
+                <ul class="earns-list pretty-text">
+                    <li class="earns-list__item earn-method rounded smooth">
+                        <div class="earn-method__header">
+                            <img src="./assets/img/grow-icon.svg" alt="icon" class="icon">
+                            <div class="earn-method__line"></div>
+                            <h4 class="earn-method__title">Блокчейн и криптовалюта</h4>
+                        </div>
+
+                        <p class="earn-method__text">Сегодня IT-проекты в этой сфере в центре внимания инвесторов всего мира. Но эти технологии интересуют нас не только сами по себе, мы рассматриваем перспективы их внедрение в e-commerce и в развитие маркетплейсов.</p>
+                    </li>
+
+                    <li class="earns-list__item earn-method rounded smooth">
+                        <div class="earn-method__header">
+                            <img src="./assets/img/grow-icon.svg" alt="icon" class="icon">
+                            <div class="earn-method__line"></div>
+                            <h4 class="earn-method__title">ИИ в сфере беттинга</h4>
+                        </div>
+
+                        <p class="earn-method__text">Запатентованный инфопродукт собственного производства на основе искусственного интеллекта служит инструментом получения стабильного дохода в сфере беттинга. </p>
+                    </li>
+
+                    <li class="earns-list__item earn-method rounded smooth">
+                        <div class="earn-method__header">
+                            <img src="./assets/img/grow-icon.svg" alt="icon" class="icon">
+                            <div class="earn-method__line"></div>
+                            <h4 class="earn-method__title">Блокчейн и криптовалюта</h4>
+                        </div>
+
+                        <p class="earn-method__text">Некоторые инвесторы уже разуверились в этих сферах, но технология виртуальной реальности «воскресила» эти отрасли и превратила «Old School» в «New Sexy».</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- hover / active - это box-shadow -->
         </article>
 
         
-        <article class="invest"></article>
-        <article class="faq"></article>
-        <article class="stats"></article>
-    </main> -->
+        <article class="invest">INVEST</article>
+        <article class="faq">FAQ</article>
+        <article class="stats">STATS</article>
+    </main>
 
-    <!-- <footer class="footer"></footer> -->
+    <footer class="footer">FOOTER</footer>
 
     <script src="./main.js"></script>
 </body>

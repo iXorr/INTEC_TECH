@@ -1,6 +1,5 @@
 .header__shortcut {
     padding: 0 1rem;
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -10,11 +9,6 @@
 
 .header__content {
     background-image: url("../../../img/dark-bg-1.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    font-size: 1rem;
 }
 
     .nav-bar {
@@ -44,7 +38,6 @@
 
         .login {
             white-space: nowrap;
-            font-size: inherit;
             padding: 0 2rem;
         }
 
@@ -67,19 +60,10 @@
             margin-bottom: 3rem;
         }
 
-            .preview__title {
-                font-size: 3rem;
-            }
-
-            .preview__text {
-                font-size: 1.25rem;
-            }
-
             .preview__btn {
                 pointer-events: all;
                 width: fit-content;
                 letter-spacing: inherit;
-                font-size: inherit;
             }
 
         .slider {

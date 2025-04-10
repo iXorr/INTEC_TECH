@@ -1,5 +1,19 @@
 /* Утилитарные (структурные) классы */
 
+.pretty-text {
+    text-wrap: balance;
+}
+
+.rounded {
+    border-radius: .35rem;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .smooth {
     transition: .25s ease;
 }
@@ -45,18 +59,17 @@
         background: #194DD2;
     }
 
-.high-line {
-    line-height: 150%;
-}
-
 .circled-btn {
-    padding: 1rem 1.5rem;
-    border: 1px solid #fff;
+    padding: 1rem 2rem;
     border-radius: 2rem;
 }
 
-.text-bold {
-    font-weight: bold;
+.white-bordered {
+    border: 1px solid #fff;
+}
+
+.high-line {
+    line-height: 150%;
 }
 
 .text-spaced {
