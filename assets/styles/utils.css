@@ -124,6 +124,16 @@
     background: #000;
 }
 
+.bg-little-dark {
+    color: #fff;
+    background: #0C0C0C;
+}
+
+.bg-tiny-dark {
+    color: #fff;
+    background: #1A1A1A;
+}
+
 .bg-light {
     color: #194DD2;
     background: #fff;   
@@ -222,4 +232,8 @@
 
 .white {
     color: #fff;
+}
+
+.black {
+    color: #000;
 }

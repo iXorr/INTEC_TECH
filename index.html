@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="description" content="Website for INTEC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 
     <link rel="preload" href="./assets/img/dark-bg-1.webp" as="image">
     <link rel="preload" href="./assets/img/dark-bg-2.webp" as="image">
@@ -84,7 +82,7 @@
     </header>
 
     <main class="main w-full">
-        <article class="info">
+        <article class="info" aria-label="article">
             <section class="ad flex flex-centered">
                 <div class="ad__preview no-shrink">
                     <div class="ad__preview-header rounded bg-blue smooth flex">
@@ -141,8 +139,8 @@
             </section>
         </article>
 
-        <article class="invest bg-dark flex">
-            <section class="invest__preview bg-image h-full no-shrink"></section>
+        <article class="invest bg-tiny-dark flex" aria-label="article">
+            <section class="invest__preview bg-image h-full no-shrink" aria-label="section"></section>
 
             <section class="invest__guide w-full h-full flex">
                 <div class="guide-offer h-full flex flex-column flex-justified">
@@ -195,10 +193,10 @@
                     <div class="acor__item wrap-1 smooth box-shadow">
                         <input class="w-full h-full" type="radio" id="tab-1" name="tabs">
                         <label class="flex flex-aligned" for="tab-1">
-                            <div class="acor__item-header flex flex-aligned">
+                            <span class="acor__item-header flex flex-aligned">
                                 <span class="acor__item-decor text-2rem bold-text blue">?</span>
                                 <span class="acor__item-title">Что нужно, чтобы начать работу с future technologies company (ftc)?</span>
-                            </div>
+                            </span>
 
                             <svg class="cross" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 2L8 8L15 2" stroke="#0A51CB" stroke-width="3"/>
@@ -211,10 +209,10 @@
                     <div class="acor__item wrap-2 smooth box-shadow">
                         <input class="w-full h-full" type="radio" id="tab-2" name="tabs">
                         <label class="flex flex-aligned" for="tab-2">
-                            <div class="acor__item-header flex flex-aligned">
+                            <span class="acor__item-header flex flex-aligned">
                                 <span class="acor__item-decor text-2rem bold-text blue">?</span>
                                 <span class="acor__item-title">Могу ли я не заработать, инвестируя с future technologies company (ftc)?</span>
-                            </div>
+                            </span>
 
                             <svg class="cross" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 2L8 8L15 2" stroke="#0A51CB" stroke-width="3"/>
@@ -227,10 +225,10 @@
                     <div class="acor__item wrap-3 smooth box-shadow">
                         <input class="w-full h-full" type="radio" id="tab-3" name="tabs">
                         <label class="flex flex-aligned" for="tab-3">
-                            <div class="acor__item-header flex flex-aligned">
+                            <span class="acor__item-header flex flex-aligned">
                                 <span class="acor__item-decor text-2rem bold-text blue">?</span>
                                 <span class="acor__item-title">Какая минимальная и максимальная сумма депозита?</span>
-                            </div>
+                            </span>
 
                             <svg class="cross" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 2L8 8L15 2" stroke="#0A51CB" stroke-width="3"/>
@@ -299,7 +297,7 @@
         </article>
     </main>
 
-    <footer class="footer flex flex-wrap flex-justified bg-dark">
+    <footer class="footer bg-little-dark flex flex-wrap flex-justified">
         <p class="footer__descr pretty-text">Команда, у которой за плечами не менее 12 лет работы на разных позициях в сегменте инвестиционного бизнеса – от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка.</p>
 
         <div class="footer__nav">
@@ -330,7 +328,7 @@
 
             <div class="footer__one-grid">
                 <a href="#">+7 (499)-299-33-33</a>
-                <a href="#">&nbsp</a>
+                <a href="#" class="black">EMPTY</a>
                 <a href="#">info@ftc.vin</a>
                 <a href="#"><span class="bold-text">ПН - ПТ:</span> 10:00 - 20:00 по МСК</a>
                 <a href="#"><span class="bold-text">СБ - ВС:</span> свободный график</a>

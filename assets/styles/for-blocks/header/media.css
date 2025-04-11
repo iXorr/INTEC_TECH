@@ -16,6 +16,10 @@
         .header__shortcut {
             display: none;
         }
+
+    .preview__title {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 720px) {    

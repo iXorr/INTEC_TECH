@@ -1,51 +1,23 @@
-/* Desktop: 1920 x 1080
-Notepad: 1440 x 900
-Large tablet: 1024 x 768
-Tablet: 800 x 600 
-Mobile: 360 x 760 */
-
-@media (min-width: 1920px), (max-width: 1920px) {
-    .adaptive {
-        background: red;
-    }
-    
+@media (min-width: 1920px), (max-width: 1920px) {    
     html {
         font-size: 18px;
     }
 }
 
 @media (max-width: 1440px) {
-    .adaptive {
-        background: orange;
-    }
-
     html {
         font-size: 14px;
     }
 }
 
 @media (max-width: 1080px) {
-    .adaptive {
-        background: yellow;
-    }
-
     html {
         font-size: 12px;
     }
 }
 
 @media (max-width: 720px) {
-    .adaptive {
-        background: green;
-    }
-
     html {
         font-size: 11px;
-    }
-}
-
-@media (max-width: 480px) {
-    .adaptive {
-        background: lime;
     }
 }

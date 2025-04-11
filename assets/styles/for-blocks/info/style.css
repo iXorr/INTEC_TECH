@@ -1,5 +1,5 @@
 .info {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
 }
 
     .ad > * {
@@ -37,14 +37,12 @@
         }
 
         .ad__more h2 {
+            margin-bottom: 1.25rem;
             max-width: 27.5rem;
         }
 
         .ad__more p {
             max-width: 45rem;
-        }
-
-        .ad__more > *:not(:last-child) {
             margin-bottom: 1rem;
         }
 
