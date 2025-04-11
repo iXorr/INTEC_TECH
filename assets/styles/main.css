@@ -9,6 +9,9 @@
 @import url("./for-blocks/main/style.css");
 @import url("./for-blocks/main/media.css");
 
+@import url("./for-blocks/footer/style.css");
+@import url("./for-blocks/footer/media.css");
+
 .adaptive {
     display: none;
     position: absolute;

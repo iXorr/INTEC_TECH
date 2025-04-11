@@ -12,6 +12,7 @@
     <link rel="preload" href="./assets/img/dark-bg-3.webp" as="image">
     <link rel="preload" href="./assets/img/writter-bg.webp" as="image">
     <link rel="preload" href="./assets/img/code-bg.webp" as="image">
+    <link rel="preload" href="./assets/img/inno-bg.webp" as="image">
 
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -252,10 +253,85 @@
             </div>
         </article>
 
-        <article class="stats">STATS</article>
+        <article class="stats bg-image">
+            <div class="stats-nums w-full h-full flex flex-column flex-centered">
+                <div class="stats-header flex flex-column">
+                    <h2>Статистика компании</h2>
+                    <div class="horizontal-line bg-light"></div>
+                </div>
+
+                <ul class="stats-info flex flex-centered">
+                    <li class="stats-info__item">
+                        <span class="num">932</span>
+                        <div class="long-line"></div>
+                        <span class="sign">Работаем (дней)</span>
+                    </li>
+
+                    <li class="stats-info__item">
+                        <span class="num">960696</span>
+                        <div class="long-line"></div>
+                        <span class="sign">Всего инвесторов</span>
+                    </li>
+
+                    <li class="stats-info__item">
+                        <span class="num">67</span>
+                        <div class="long-line"></div>
+                        <span class="sign">Новых за 24 часа</span>
+                    </li>
+
+                    <li class="stats-info__item">
+                        <span class="num">109500р.</span>
+                        <div class="long-line"></div>
+                        <span class="sign">Среднее пополнение</span>
+                    </li>
+                </ul>
+
+                <div class="stats-btns flex flex-centered">
+                    <button class="bg-blue circled-btn pointer smooth">Присоединиться к нам</button>
+                    <button class="circled-btn white-bordered bg-trans-alt pointer smooth">Калькулятор прибыли</button>
+                </div>
+            </div>
+        </article>
     </main>
 
-    <footer class="footer">FOOTER</footer>
+    <footer class="footer flex bg-dark">
+        <p class="footer__descr pretty-text">Команда, у которой за плечами не менее 12 лет работы на разных позициях в сегменте инвестиционного бизнеса – от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка.</p>
+
+        <div class="footer__nav">
+            <div class="footer__subtitle">
+                <p class="title">Навигация</p>
+                <div class="large-line"></div>
+            </div>
+
+            <div class="footer__two-grid">
+                <a href="#">Главная</a>
+                <a href="#">О компании</a>
+                <a href="#">Отзывы о компании</a>
+                <a href="#">Как мы зарабатываем?</a>
+                <a href="#">Клиент. соглашение</a>
+
+                <a href="#">Документы компании</a>
+                <a href="#">Новости</a>
+                <a href="#">F.A.Q.</a>
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+
+        <div class="footer__contacts">
+            <div class="footer__subtitle">
+                <p class="title">Контакты</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="footer__one-grid">
+                <a href="#">+7 (499)-299-33-33</a>
+                <a href="#" style="color: #000;">EMPTY CELL</a>
+                <a href="#">info@ftc.vin</a>
+                <a href="#">ПН - ПТ: 10:00 - 20:00 по МСК</a>
+                <a href="#">СБ - ВС: свободный график</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./main.js"></script>
 </body>

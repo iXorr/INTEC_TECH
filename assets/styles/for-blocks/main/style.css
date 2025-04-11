@@ -1,4 +1,4 @@
-/* .header, .info, .invest, .faq { display: none; } */
+/* .header, .info, .invest, .faq, .stats { display: none; } */
 
 .info {
     padding: 3rem 2rem;
@@ -248,9 +248,47 @@
     }
                 
 .stats {
-    background: lightgreen;
+    background-image: url("../../../img/inno-bg.webp");
+    color: #fff;
 }
 
-.footer {
-    background: lightslategray;
-}
+    .stats-nums {
+        backdrop-filter: brightness(25%);
+        padding: 5rem 3rem;
+    }
+
+        .stats-header {
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+    
+            .stats-header h2 {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+        .stats-info {
+            gap: 4rem;
+            flex-wrap: wrap;
+            color: #fff;
+        }
+
+                .num {
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+
+                .long-line {
+                    height: 2px;
+                    width: 15rem;
+                    background: #fff;
+
+                    margin-top: 1rem;
+                    margin-bottom: 1.5rem;
+                }
+
+        .stats-btns {
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }

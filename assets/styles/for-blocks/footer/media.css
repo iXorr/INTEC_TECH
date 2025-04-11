@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    .footer {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .footer__descr {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer {
+        justify-content: start;
+    }
+}

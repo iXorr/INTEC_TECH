@@ -23,14 +23,6 @@
         .acor {
             width: 35rem;
         }
-
-    .stats {
-        height: clamp(50dvh, 725px, 50dvh);
-    }
-
-    .footer {
-        height: clamp(50dvh, 600px, 50dvh);
-    }
 }
 
 @media (max-width: 1440px) {
@@ -59,7 +51,7 @@
             }
         
             .earns-list__item {
-                width: 30rem;
+                width: 26.5rem;
                 height: 20rem;
             }
 
@@ -93,17 +85,6 @@
 
     .acor {
         width: 25rem;
-    }
-
-
-
-
-    .stats {
-        height: clamp(50dvh, 725px, 50dvh);
-    }
-
-    .footer {
-        height: clamp(50dvh, 600px, 50dvh);
     }
 }
 

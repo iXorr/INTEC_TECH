@@ -156,13 +156,21 @@
         background: #000;
     }
 
-.bg-trans {
+.bg-trans,
+.bg-trans-alt {
     background: transparent;
 }
 
-.bg-trans:hover,
-.bg-trans:active {
-    color: #fff;
-    background: #194DD2;
-    border: 1px solid transparent;
-}
+    .bg-trans-alt:hover,
+    .bg-trans-alt:active {
+        color: #fff;
+        background: #000;
+        border: 1px solid transparent;
+    }
+
+    .bg-trans:hover,
+    .bg-trans:active {
+        color: #fff;
+        background: #194DD2;
+        border: 1px solid transparent;
+    }
