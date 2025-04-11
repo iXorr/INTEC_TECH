@@ -20,11 +20,9 @@
     <title>INTEC | Тех. задание</title>
 </head>
 <body>
-    <div class="adaptive"></div>
-
     <header class="header flex bg-dark">
-        <div class="header__shortcut bg-blue pointer flex flex-column flex-centered smooth" role="button">
-            <h2 style="font-size: 1.75rem;">Начать зарабатывать</h2>
+        <div class="header__shortcut bg-blue pointer flex flex-column flex-centered smooth text-centered" role="button">
+            <h2 class="text-175rem">Начать зарабатывать</h2>
 
             <svg class="icon arrow-icon"
             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +46,7 @@
                     </button>
                 </div>
 
-                <ul class="nav-bar__links links flex flex-centered text-spaced">
+                <ul class="nav-bar__links w-full h-full links flex flex-centered text-spaced">
                     <li class="links__item smooth"><a href="#">О компании</a></li>
                     <li class="links__item smooth"><a href="#">Инвестору</a></li>
                     <li class="links__item smooth"><a href="#">Новости</a></li>
@@ -66,7 +64,7 @@
                 <button class="login bg-blue flex flex-centered pointer smooth">Вход / Регистрация</button>
             </nav>
 
-            <div class="preview flex flex-column h-full text-spaced">
+            <div class="preview flex flex-column flex-justified h-full text-spaced">
                 <div class="preview__content">
                     <h1 class="preview__title high-line">Сегодня рынок IT-технологий измеряется уже триллионами долларов</h1>
                     <p class="preview__text high-line">Мы знаем как заработать свою долю прибыли. Регистрируйтесь на нашей платформе и начинайте зарабатывать с нами</p>
@@ -87,8 +85,8 @@
 
     <main class="main w-full">
         <article class="info">
-            <section class="ad flex">
-                <div class="ad__preview">
+            <section class="ad flex flex-centered">
+                <div class="ad__preview no-shrink">
                     <div class="ad__preview-header rounded bg-blue smooth flex">
                         <h2>Как мы работаем</h2>
                     </div>
@@ -109,32 +107,32 @@
             </section>
 
             <section class="earns">
-                <ul class="earns-list pretty-text">
+                <ul class="earns-list flex flex-justified flex-wrap pretty-text">
                     <li class="earns-list__item earn-method rounded smooth box-shadow">
-                        <div class="earn-method__header">
+                        <div class="earn-method__header flex flex-aligned">
                             <img src="./assets/img/grow-icon.svg" alt="icon" class="icon">
                             <div class="earn-method__line"></div>
-                            <h3 class="earn-method__title" style="font-size: 1.25rem;">Блокчейн и криптовалюта</h3>
+                            <h3 class="earn-method__title text-125rem">Блокчейн и криптовалюта</h3>
                         </div>
 
                         <p class="earn-method__text">Сегодня IT-проекты в этой сфере в центре внимания инвесторов всего мира. Но эти технологии интересуют нас не только сами по себе, мы рассматриваем перспективы их внедрение в e-commerce и в развитие маркетплейсов.</p>
                     </li>
 
                     <li class="earns-list__item earn-method rounded smooth box-shadow">
-                        <div class="earn-method__header">
+                        <div class="earn-method__header flex flex-aligned">
                             <img src="./assets/img/grow-icon.svg" alt="icon" class="icon">
                             <div class="earn-method__line"></div>
-                            <h3 class="earn-method__title" style="font-size: 1.25rem;">ИИ в сфере беттинга</h3>
+                            <h3 class="earn-method__title text-125rem">ИИ в сфере беттинга</h3>
                         </div>
 
                         <p class="earn-method__text">Запатентованный инфопродукт собственного производства на основе искусственного интеллекта служит инструментом получения стабильного дохода в сфере беттинга. </p>
                     </li>
 
                     <li class="earns-list__item earn-method rounded smooth box-shadow">
-                        <div class="earn-method__header">
+                        <div class="earn-method__header flex flex-aligned">
                             <img src="./assets/img/grow-icon.svg" alt="icon" class="icon">
                             <div class="earn-method__line"></div>
-                            <h3 class="earn-method__title" style="font-size: 1.25rem;">Блокчейн и криптовалюта</h3>
+                            <h3 class="earn-method__title text-125rem">Блокчейн и криптовалюта</h3>
                         </div>
 
                         <p class="earn-method__text">Некоторые инвесторы уже разуверились в этих сферах, но технология виртуальной реальности «воскресила» эти отрасли и превратила «Old School» в «New Sexy».</p>
@@ -147,38 +145,38 @@
             <section class="invest__preview bg-image h-full no-shrink"></section>
 
             <section class="invest__guide w-full h-full flex">
-                <div class="guide-offer h-full flex flex-column">
+                <div class="guide-offer h-full flex flex-column flex-justified">
                     <h2 class="pretty-text">Инвестировать с нами надежно и выгодно</h2>
                     <div class="horizontal-line bg-light"></div>
-                    <button class="circled-btn bg-blue smooth w-self">Начать зарабатывать</button>
+                    <button class="circled-btn bg-blue-alt smooth w-self">Начать зарабатывать</button>
                 </div>
 
                 <ul class="guide-steps flex flex-column flex-centered">
                     <li class="guide-line"></li>
 
-                    <li class="guide-steps__item flex">
-                        <span class="large-circle bg-light flex flex-centered no-shrink smooth" style="font-size: 3rem;">1</span>
+                    <li class="guide-steps__item flex flex-aligned">
+                        <span class="large-circle bg-light flex flex-centered no-shrink smooth text-3rem">1</span>
                         
                         <div class="guide-steps__item-info">
-                            <p style="font-weight: bold;">Регистрация на сайте</p>
+                            <p class="bold-text">Регистрация на сайте</p>
                             <p>Пройдите процедуру регистрации на сайте для открытия счета. Нажмите кнопку «Регистрация» и заполните все необходимые поля</p>
                         </div>
                     </li>
 
-                    <li class="guide-steps__item flex">
-                        <span class="large-circle bg-light flex flex-centered no-shrink smooth" style="font-size: 3rem;">2</span>
+                    <li class="guide-steps__item flex flex-aligned">
+                        <span class="large-circle bg-light flex flex-centered no-shrink smooth text-3rem">2</span>
                         
                         <div class="guide-steps__item-info">
-                            <p style="font-weight: bold;">Открывайте депозит</p>
+                            <p class="bold-text">Открывайте депозит</p>
                             <p>Сделайте инвестицию на удобный срок на сумму от 100 рублей и ваши деньги начнут работать на вас</p>
                         </div>
                     </li>
 
-                    <li class="guide-steps__item flex">
-                        <span class="large-circle bg-light flex flex-centered no-shrink smooth" style="font-size: 3rem;">3</span>
+                    <li class="guide-steps__item flex flex-aligned">
+                        <span class="large-circle bg-light flex flex-centered no-shrink smooth text-3rem">3</span>
                         
                         <div class="guide-steps__item-info">
-                            <p style="font-weight: bold;">Распоряжайтесь прибылью</p>
+                            <p class="bold-text">Распоряжайтесь прибылью</p>
                             <p>По факту окончания периода инвестиции вклад с прибылью будут доступы для вывода или создания нового депозита</p>
                         </div>
                     </li>
@@ -186,19 +184,19 @@
             </section>
         </article>
 
-        <article class="faq flex flex-column">
-            <div class="faq__title flex flex-column">
+        <article class="faq flex flex-column flex-aligned">
+            <div class="faq__title flex flex-column flex-aligned">
                 <h2>Часто задаваемые вопросы</h2>
                 <div class="horizontal-line bg-blue"></div>
             </div>
 
-            <div class="faq__content">
+            <div class="faq__content flex">
                 <div class="acor">         
                     <div class="acor__item wrap-1 smooth box-shadow">
-                        <input type="radio" id="tab-1" name="tabs">
-                        <label for="tab-1">
-                            <div class="acor__item-header">
-                                <span class="acor__item-decor">?</span>
+                        <input class="w-full h-full" type="radio" id="tab-1" name="tabs">
+                        <label class="flex flex-aligned" for="tab-1">
+                            <div class="acor__item-header flex flex-aligned">
+                                <span class="acor__item-decor text-2rem bold-text blue">?</span>
                                 <span class="acor__item-title">Что нужно, чтобы начать работу с future technologies company (ftc)?</span>
                             </div>
 
@@ -207,14 +205,14 @@
                             </svg>
                         </label>
 
-                        <div class="content" style="padding: 0 1.5rem;"><br> Content-1 <br><br></div>
+                        <div class="content"><br>Content-1<br><br></div>
                     </div>
 
                     <div class="acor__item wrap-2 smooth box-shadow">
-                        <input type="radio" id="tab-2" name="tabs">
-                        <label for="tab-2">
-                            <div class="acor__item-header">
-                                <span class="acor__item-decor">?</span>
+                        <input class="w-full h-full" type="radio" id="tab-2" name="tabs">
+                        <label class="flex flex-aligned" for="tab-2">
+                            <div class="acor__item-header flex flex-aligned">
+                                <span class="acor__item-decor text-2rem bold-text blue">?</span>
                                 <span class="acor__item-title">Могу ли я не заработать, инвестируя с future technologies company (ftc)?</span>
                             </div>
 
@@ -223,14 +221,14 @@
                             </svg>
                         </label>
 
-                        <div class="content" style="padding: 0 1.5rem;"><br> Content-2 <br><br></div>
+                        <div class="content"><br>Content-2<br><br></div>
                     </div>
 
                     <div class="acor__item wrap-3 smooth box-shadow">
-                        <input type="radio" id="tab-3" name="tabs">
-                        <label for="tab-3">
-                            <div class="acor__item-header">
-                                <span class="acor__item-decor">?</span>
+                        <input class="w-full h-full" type="radio" id="tab-3" name="tabs">
+                        <label class="flex flex-aligned" for="tab-3">
+                            <div class="acor__item-header flex flex-aligned">
+                                <span class="acor__item-decor text-2rem bold-text blue">?</span>
                                 <span class="acor__item-title">Какая минимальная и максимальная сумма депозита?</span>
                             </div>
 
@@ -239,7 +237,7 @@
                             </svg>
                         </label>
 
-                        <div class="content" style="padding: 0 1.5rem;"><br> Content-3 <br><br></div>
+                        <div class="content"><br>Content-3<br><br></div>
                     </div>
                 </div>
 
@@ -247,59 +245,66 @@
                     <h2 class="pretty-text">Какая минимальная и максимальная сумма депозита?</h2>
                     <div class="horizontal-line bg-light"></div>
 
-                    <p style="font-size: 1rem;">Минимальный размер депозита – 100 рублей.</p>
-                    <p style="font-size: 1rem;">Максимальный размер депозита – 80 000 000 рублей.</p>
+                    <p class="text-1rem">
+                        Минимальный размер депозита – 
+                        <span class="bold-text">100 рублей.</span>
+                    </p>
+
+                    <p class="text-1rem">
+                        Максимальный размер депозита – 
+                        <span class="bold-text">80 000 000 рублей.</span>
+                    </p>
                 </div>
             </div>
         </article>
 
-        <article class="stats bg-image">
+        <article class="stats bg-image white">
             <div class="stats-nums w-full h-full flex flex-column flex-centered">
-                <div class="stats-header flex flex-column">
-                    <h2>Статистика компании</h2>
+                <div class="stats-header flex flex-column flex-aligned">
+                    <h2 class="text-centered">Статистика компании</h2>
                     <div class="horizontal-line bg-light"></div>
                 </div>
 
-                <ul class="stats-info flex flex-centered">
+                <ul class="stats-info flex flex-centered flex-wrap">
                     <li class="stats-info__item">
-                        <span class="num">932</span>
+                        <span class="num text-3rem bold-text">932</span>
                         <div class="long-line"></div>
                         <span class="sign">Работаем (дней)</span>
                     </li>
 
                     <li class="stats-info__item">
-                        <span class="num">960696</span>
+                        <span class="num text-3rem bold-text">960696</span>
                         <div class="long-line"></div>
                         <span class="sign">Всего инвесторов</span>
                     </li>
 
                     <li class="stats-info__item">
-                        <span class="num">67</span>
+                        <span class="num text-3rem bold-text">67</span>
                         <div class="long-line"></div>
                         <span class="sign">Новых за 24 часа</span>
                     </li>
 
                     <li class="stats-info__item">
-                        <span class="num">109500р.</span>
+                        <span class="num text-3rem bold-text">109500р.</span>
                         <div class="long-line"></div>
                         <span class="sign">Среднее пополнение</span>
                     </li>
                 </ul>
 
-                <div class="stats-btns flex flex-centered">
-                    <button class="bg-blue circled-btn pointer smooth">Присоединиться к нам</button>
+                <div class="stats-btns flex flex-centered flex-wrap">
+                    <button class="circled-btn bg-blue-alt pointer smooth">Присоединиться к нам</button>
                     <button class="circled-btn white-bordered bg-trans-alt pointer smooth">Калькулятор прибыли</button>
                 </div>
             </div>
         </article>
     </main>
 
-    <footer class="footer flex bg-dark">
+    <footer class="footer flex flex-wrap flex-justified bg-dark">
         <p class="footer__descr pretty-text">Команда, у которой за плечами не менее 12 лет работы на разных позициях в сегменте инвестиционного бизнеса – от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка.</p>
 
         <div class="footer__nav">
             <div class="footer__subtitle">
-                <p class="title">Навигация</p>
+                <p class="title bold-text">Навигация</p>
                 <div class="large-line"></div>
             </div>
 
@@ -319,16 +324,16 @@
 
         <div class="footer__contacts">
             <div class="footer__subtitle">
-                <p class="title">Контакты</p>
+                <p class="title bold-text">Контакты</p>
                 <div class="line"></div>
             </div>
 
             <div class="footer__one-grid">
                 <a href="#">+7 (499)-299-33-33</a>
-                <a href="#" style="color: #000;">EMPTY CELL</a>
+                <a href="#">&nbsp</a>
                 <a href="#">info@ftc.vin</a>
-                <a href="#">ПН - ПТ: 10:00 - 20:00 по МСК</a>
-                <a href="#">СБ - ВС: свободный график</a>
+                <a href="#"><span class="bold-text">ПН - ПТ:</span> 10:00 - 20:00 по МСК</a>
+                <a href="#"><span class="bold-text">СБ - ВС:</span> свободный график</a>
             </div>
         </div>
     </footer>

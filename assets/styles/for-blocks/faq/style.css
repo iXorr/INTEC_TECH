@@ -1,0 +1,75 @@
+.faq {
+    padding: 3rem 2rem;
+}
+
+.faq__title {
+    margin-bottom: 3rem;
+}
+
+.faq__title h2 {
+    margin-bottom: 1rem;
+}
+
+.faq__content {
+    gap: 1rem;
+}
+
+    .faq-preview {
+        padding: 3rem;
+    }
+
+        .faq-preview .horizontal-line {
+            margin: 1.5rem 0;
+        }
+
+        .faq-preview p:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+
+    .acor__item {
+        position: relative;
+    }
+
+        .acor__item-header {
+            gap: 1rem;
+        }
+
+            .acor input {
+                appearance: none;
+                position: absolute;
+                z-index: 2;
+            }
+
+.acor label {
+    height: 5rem;
+    padding: 0 1.5rem;
+}
+
+.acor label div:first-child {
+    width: 100%;
+}
+
+.acor .content {
+    max-height: 0;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    background: rgba(10, 81, 203, 0.15);
+    
+    overflow: hidden;
+    transition: .35s ease-in-out;
+}
+
+.acor input:checked ~ .content {
+    max-height: 20rem;
+}
+
+.acor .cross {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+    transition: .25s ease-in-out;
+}
+
+.acor input:checked ~ label .cross {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,51 @@
+@media (min-width: 1920px), (max-width: 1920px) {
+    .invest {
+        height: 750px;
+    }
+
+    .invest__preview {
+        width: 435px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .invest {
+        height: 575px;
+    }
+
+    .invest__preview {
+        width: 285px;
+        background-position: -10rem 0;
+    }
+}
+
+@media (max-width: 1080px) {
+    .invest {
+        height: auto;
+        padding: 3rem 2rem;
+    }
+
+    .invest__guide {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+
+        height: fit-content;
+        padding-right: 0;
+    }
+
+    .guide-offer {
+        margin: 0;
+    }
+
+    .invest__preview {
+        display: none;
+    }
+}
+
+@media (max-width: 820px) {
+    .guide-offer {
+        max-width: 39rem;
+    }
+}

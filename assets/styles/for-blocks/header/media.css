@@ -8,8 +8,6 @@
         }
 }
 
-@media (max-width: 1440px) {  }
-
 @media (max-width: 1080px) {
     .header {
         height: clamp(25dvh, 504px, 100dvh);
@@ -26,6 +24,10 @@
         display: block;
     }
 
+    .ham-exit-btn {
+        fill: #fff;
+    }
+
     .nav-bar__ham {
         margin: 1rem;
     }
@@ -33,12 +35,11 @@
     .nav-bar__links {
         display: block;
         position: absolute;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.9);
+        z-index: -1;
         padding: 4rem;
 
         opacity: 0;
-        z-index: -1;
+        background: rgba(0, 0, 0, 0.9);
     }
 
     .links__item a {
@@ -58,10 +59,6 @@
     .nav-bar__links--active {
         z-index: 1;
         opacity: 1;
-    }
-
-    .nav-bar__login {
-        width: fit-content;
     }
 }
 

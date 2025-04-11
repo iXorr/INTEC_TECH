@@ -1,0 +1,46 @@
+@media (min-width: 1920px), (max-width: 1920px) {
+    .faq-preview {
+        width: 37.5rem;
+        height: 20rem;
+    }
+
+    .acor {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .faq-preview {
+        width: 35rem;
+    }
+
+    .acor {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .faq-preview {
+        display: none;
+    }
+
+    .acor {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .faq__title {
+        align-items: start;
+    }
+}
+
+@media (max-width: 480px) { 
+    .faq {
+        align-items: start;
+    }
+
+    .acor {
+        width: 90%;
+    }
+}

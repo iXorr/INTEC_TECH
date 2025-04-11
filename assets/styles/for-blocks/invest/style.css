@@ -1,0 +1,59 @@
+.invest {
+    overflow: hidden;
+}
+
+    .invest__preview {
+        background-image: url("../../../img/code-bg.webp");
+        background-position: left center;
+        margin-right: 5rem;
+    }
+
+    .invest__guide {
+        padding-right: 2rem;
+    }
+
+        .guide-offer {
+            z-index: 2;
+            max-width: 20rem;
+            margin-right: 5rem;
+        }
+
+            .guide-offer > *:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+            
+        .guide-steps {
+            position: relative;
+            max-width: 39rem;
+            gap: 3rem;
+        }
+
+            .guide-line {
+                position: absolute;
+                left: 2.5rem;
+                z-index: 1;
+
+                height: 37.5rem;
+
+                border-left-width: 2px;
+                border-left-style: dashed;
+                border-left-color: #000;
+
+                background: linear-gradient(transparent, gray, transparent) border-box; 
+            }
+
+            .guide-steps__item {
+                z-index: 3;
+            }
+
+                .guide-steps__item .large-circle {
+                    margin-right: 2rem;
+                }
+
+                .guide-steps__item p {
+                    max-width: inherit;
+                }
+
+                .guide-steps__item p:first-of-type {
+                    margin-bottom: 1rem;
+                }

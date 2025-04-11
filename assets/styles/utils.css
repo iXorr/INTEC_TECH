@@ -1,16 +1,50 @@
-/* Утилитарные (структурные) классы */
+/* For elements */
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-self {
+    width: fit-content;
+}
+
+.h-self {
+    height: fit-content;
+}
 
 .box-shadow {
     box-shadow: 0px 0px 40px 0px rgba(34, 60, 80, 0.2);
 }
 
-.box-shadow:hover,
-.box-shadow:active {
-    box-shadow: 0px 0px 40px 0px rgba(34, 60, 80, 0.35);
+    .box-shadow:hover {
+        box-shadow: 0px 0px 40px 0px rgba(34, 60, 80, 0.35);
+    }
+
+.white-bordered {
+    border: 1px solid #fff;
 }
 
-.no-shrink {
-    flex-shrink: 0;
+.rounded {
+    border-radius: .35rem;
+}
+
+.smooth {
+    transition: .25s ease;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Custom elements */
+
+.horizontal-line {
+    width: 3rem;
+    height: 3px;
 }
 
 .circle {
@@ -30,62 +64,6 @@
     border-radius: 100%;
 }
 
-.h-self {
-    height: fit-content;
-}
-
-.w-self {
-    width: fit-content;
-}
-
-.horizontal-line {
-    width: 3rem;
-    height: 3px;
-}
-
-.pretty-text {
-    text-wrap: balance;
-}
-
-.rounded {
-    border-radius: .35rem;
-}
-
-.bg-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.smooth {
-    transition: .25s ease;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.h-full {
-    height: 100%;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-centered {
-    justify-content: center;
-    align-items: center;
-}
-
 .icon {
     width: 3rem;
     height: 3rem;
@@ -97,43 +75,61 @@
         background: transparent;
     }
 
-    .icon--white:focus {
-        fill: #fff;
-        background: #194DD2;
-    }
-
 .circled-btn {
     padding: 1rem 2rem;
     border-radius: 2rem;
 }
 
-.white-bordered {
-    border: 1px solid #fff;
+/* Flexbox */
+
+.flex {
+    display: flex;
 }
 
-.high-line {
-    line-height: 150%;
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
-.text-spaced {
-    letter-spacing: .05rem;
+.flex-column {
+    flex-direction: column;
 }
 
-/* Утилитарные (внешний вид) классы с псевдоклассами */
+.flex-centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-justified {
+    justify-content: center;
+}
+
+.flex-aligned {
+    align-items: center;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+/* Background */
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 .bg-dark {
-    fill: #fff;
     color: #fff;
     background: #000;
 }
 
 .bg-light {
-    background: #fff;   
     color: #194DD2;
+    background: #fff;   
 }
 
-    .bg-light:hover,
-    .bg-light:active {
+    .bg-light:hover {
         background: #194DD2;   
         color: #fff;
     }
@@ -143,15 +139,18 @@
     background: #194DD2;
 }
 
-.bg-blue {
-    fill: #fff;
+.bg-blue,
+.bg-blue-alt {
     color: #fff;
     background: #194DD2;
 }
 
-    .bg-blue:hover,
-    .bg-blue:active {
-        fill: #fff;
+    .bg-blue-alt:hover {
+        color: #000;
+        background: #fff;
+    }
+
+    .bg-blue:hover {
         color: #fff;
         background: #000;
     }
@@ -161,16 +160,66 @@
     background: transparent;
 }
 
-    .bg-trans-alt:hover,
-    .bg-trans-alt:active {
-        color: #fff;
-        background: #000;
+    .bg-trans-alt:hover {
+        color: #000;
+        background: #fff;
         border: 1px solid transparent;
     }
 
-    .bg-trans:hover,
-    .bg-trans:active {
+    .bg-trans:hover {
         color: #fff;
         background: #194DD2;
         border: 1px solid transparent;
     }
+
+/* Text formatting */
+
+.high-line {
+    line-height: 150%;
+}
+
+.text-spaced {
+    letter-spacing: .05rem;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-1rem {
+    font-size: 1rem;
+}
+
+.text-125rem {
+    font-size: 1.25rem;
+}
+
+.text-175rem {
+    font-size: 1.75rem;
+}
+
+.text-2rem {
+    font-size: 2rem;
+}
+
+.text-3rem {
+    font-size: 3rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.pretty-text {
+    text-wrap: balance;
+}
+
+/* Text colors */
+
+.blue {
+    color: #194DD2;
+}
+
+.white {
+    color: #fff;
+}

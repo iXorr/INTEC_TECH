@@ -1,6 +1,5 @@
 .header__shortcut {
     padding: 0 1rem;
-    text-align: center;
 }
 
     .arrow-icon path {
@@ -21,10 +20,6 @@
             display: none;
         }
 
-        .nav-bar__links {
-            width: 100%;
-        }
-
         .links {
             padding: 0 4rem;
             justify-content: space-around;
@@ -43,9 +38,8 @@
 
     .preview {
         backdrop-filter: brightness(50%);
-        justify-content: center;
         padding-left: 4rem;
-
+        
         overflow: hidden;
     }
 

@@ -6,16 +6,16 @@
 @import url("./for-blocks/header/style.css");
 @import url("./for-blocks/header/media.css");
 
-@import url("./for-blocks/main/style.css");
-@import url("./for-blocks/main/media.css");
+@import url("./for-blocks/info/style.css");
+@import url("./for-blocks/info/media.css");
+
+@import url("./for-blocks/invest/style.css");
+@import url("./for-blocks/invest/media.css");
+
+@import url("./for-blocks/faq/style.css");
+@import url("./for-blocks/faq/media.css");
+
+@import url("./for-blocks/stats/style.css");
 
 @import url("./for-blocks/footer/style.css");
 @import url("./for-blocks/footer/media.css");
-
-.adaptive {
-    display: none;
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    border-bottom-right-radius: 50%;
-}

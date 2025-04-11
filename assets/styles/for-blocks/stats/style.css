@@ -1,0 +1,33 @@
+.stats {
+    background-image: url("../../../img/inno-bg.webp");
+}
+
+    .stats-nums {
+        backdrop-filter: brightness(25%);
+        padding: 5rem 3rem;
+    }
+
+        .stats-header {
+            margin-bottom: 3rem;
+        }
+  
+            .stats-header h2 {
+                margin-bottom: 1rem;
+            }
+
+        .stats-info {
+            gap: 4rem;
+        }
+
+            .stats-info .long-line {
+                height: 2px;
+                width: 15rem;
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+                background: #fff;
+            }
+
+        .stats-btns {
+            margin-top: 3rem;
+            gap: 2rem;
+        }
